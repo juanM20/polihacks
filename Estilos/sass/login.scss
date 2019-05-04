@@ -9,6 +9,24 @@ body{
 
 .Login{
 
+  .Imagen{
+
+    box-sizing: border-box;
+
+    img{
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    p{
+      z-index: 2;
+
+      text-align: center;
+      font-size: 20pt;
+    }
+  }
+
   background-color: #ffffff;
   color: #000000;
   width: 40%;
@@ -23,7 +41,7 @@ body{
       .Form-login{
 
         display: grid;
-        grid-template-rows: 3;
+        /*grid-template-rows: 3;*/
         grid-row-gap: 20px;
 
         .btn{
