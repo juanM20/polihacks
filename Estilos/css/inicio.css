@@ -7,10 +7,31 @@
   width: 100%;
 }
 .contenedor .header {
-  height: 30%;
+  position: absolute;
+  display: grid;
+}
+.contenedor .header .text-header-content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 50%;
+  margin: auto;
+  color: #000000;
+  z-index: 2;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+.contenedor .header .text-header-content .titulo-header-content {
+  text-align: center;
+}
+.contenedor .header .text-header-content .parrafo-header-content {
+  padding-right: 15px;
 }
 .contenedor .header ul {
   list-style: none;
+}
+.contenedor .header .nav {
+  z-index: 2;
+  height: 200px;
 }
 .contenedor .header .nav li {
   float: left;

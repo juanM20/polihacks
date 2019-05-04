@@ -6,13 +6,37 @@
 .contenedor{
     width: 100%;
     .header{
+      position: absolute;
+      display: grid;
 
-      height: 30%;
+      .text-header-content{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        width: 50%;
+        margin: auto;
+        color: #000000;
+        z-index: 2;
+        border: 1px solid #000000;
+        border-radius: 15px;
+
+        .titulo-header-content{
+          text-align:center;
+        }
+
+        .parrafo-header-content{
+          padding-right:15px;
+        }
+      }
+
 
       ul{
         list-style: none;
       }
         .nav{
+
+            z-index: 2;
+            height: 200px;
+
             li{
               float: left;
               padding: 15px;
