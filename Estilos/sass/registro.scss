@@ -5,19 +5,6 @@ body {
   background-size: contain;
 }
 
-.google-button {
-  height: 40px;
-  border-width: 0;
-  background: white;
-  color: #737373;
-  border-radius: 5px;
-  white-space: nowrap;
-  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
-  transition-property: background-color, box-shadow;
-  transition-duration: 150ms;
-  transition-timing-function: ease-in-out;
-  padding: 0;
-}
 .google-button:focus, .google-button:hover {
   box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
 }
@@ -27,14 +14,7 @@ body {
   transition-duration: 10ms;
 }
 
-.google-button__icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 8px 0 8px 8px;
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
-}
+
 
 .google-button__text {
   display: inline-block;
@@ -52,7 +32,7 @@ body {
   color: #000000;
   width: 40%;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 48px;
   margin-bottom: 100px;
   padding: 10px 20px;
   border-radius: 25px;
@@ -77,10 +57,10 @@ body {
   width: 100%;
   text-decoration: none;
   border-radius: 25px;
-  background: #ffda18;
+  background:rgb(49, 184, 221);
   text-align: center;
   text-decoration: none;
-  color: #000000;
+  color: #fff;
   padding: 10px;
   box-sizing: border-box;
   transition-property: all;
@@ -88,7 +68,7 @@ body {
   transition-timing-function: cubic-bezier(0.1, 0.48, 0.44, 0.78);
 }
 .Login .Login-container .Form-login .btn:hover {
-  color: #78b2ff;
+  color: #fff;
   box-shadow: -4px 7px 20px -4px rgba(0, 0, 0, 0.56);
   transition-property: all;
   transition-duration: 0.7s;
@@ -120,5 +100,3 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
-
-/*# sourceMappingURL=login.css.map */

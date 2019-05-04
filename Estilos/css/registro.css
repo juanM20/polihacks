@@ -5,35 +5,14 @@ body {
   background-size: contain;
 }
 
-.google-button {
-  height: 40px;
-  border-width: 0;
-  background: white;
-  color: #737373;
-  border-radius: 5px;
-  white-space: nowrap;
-  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
-  transition-property: background-color, box-shadow;
-  transition-duration: 150ms;
-  transition-timing-function: ease-in-out;
-  padding: 0;
-}
 .google-button:focus, .google-button:hover {
   box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
 }
+
 .google-button:active {
   background-color: #e5e5e5;
   box-shadow: none;
   transition-duration: 10ms;
-}
-
-.google-button__icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 8px 0 8px 8px;
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
 }
 
 .google-button__text {
@@ -52,53 +31,60 @@ body {
   color: #000000;
   width: 40%;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 48px;
   margin-bottom: 100px;
   padding: 10px 20px;
   border-radius: 25px;
   box-shadow: -4px 7px 20px -4px rgba(0, 0, 0, 0.56);
 }
+
 .Login .Imagen {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
+
 .Login .Imagen p {
   z-index: 2;
   text-align: center;
   font-size: 20pt;
 }
+
 .Login .Login-container .Form-login {
   display: grid;
   /*grid-template-rows: 3;*/
   grid-row-gap: 20px;
 }
+
 .Login .Login-container .Form-login .btn {
   width: 100%;
   text-decoration: none;
   border-radius: 25px;
-  background: #ffda18;
+  background: #31b8dd;
   text-align: center;
   text-decoration: none;
-  color: #000000;
+  color: #fff;
   padding: 10px;
   box-sizing: border-box;
   transition-property: all;
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.1, 0.48, 0.44, 0.78);
 }
+
 .Login .Login-container .Form-login .btn:hover {
-  color: #78b2ff;
+  color: #fff;
   box-shadow: -4px 7px 20px -4px rgba(0, 0, 0, 0.56);
   transition-property: all;
   transition-duration: 0.7s;
   transition-timing-function: cubic-bezier(0.1, 0.48, 0.44, 0.78);
 }
+
 .Login .Login-container .Form-login .Campos-form {
   display: grid;
   grid-template-rows: 3;
   grid-row-gap: 20px;
 }
+
 .Login .Login-container .Form-login .Campos-form input[type=text], .Login .Login-container .Form-login .Campos-form input[type=password] {
   width: 100%;
   margin: 10px 0px;
@@ -115,10 +101,11 @@ body {
   bottom: 0;
   border-top: 1px solid #ffffff;
 }
+
 .footer .footer-content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=registro.css.map */

@@ -2,18 +2,71 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../Estilos/css/registro.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Registro</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
   </head>
   <body>
-    <h1>Registro</h1>
-    <form class="" id="form-autenticacion">
-      <label for="email">Email</label>
-      <input type="text" name="email" value="" id="emailRegistro">
-      <label for="password">COntraseña</label>
-      <input type="text" name="password" value="" id="passwordRegistro">
-    </form>
+
+    <div class="Login">
+      <div class="Imagen">
+        <p>Registro</p>
+      </div>
+      <div class="Login-container">
+        <div class="Form-login">
+          <form id = "formAutenticacion" class="" >
+
+            <div class="Campos-form">
+
+              <label for="correo">Correo:</label>
+              <input  id="email"  type="text" name="correo" value="" placeholder="Correo">
+
+              <label   for="pass"> Contraseña:</label>
+              <input id ="password" type="password" name="pass" value="" placeholder="Contraseña">
+
+              <a href="#" class="btn" id="registro" >Registrate</a>
+
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-content">
+        <p>Nombre</p>
+        <p> Qubits </p>
+        <p> PoliHacks/2019</p>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#config-web-app -->
+
+      <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBF_GZ2Ng3VePrGfmqSJObROzoz-W7QRlU",
+          authDomain: "hackaton-b5b58.firebaseapp.com",
+          databaseURL: "https://hackaton-b5b58.firebaseio.com",
+          projectId: "hackaton-b5b58",
+          storageBucket: "hackaton-b5b58.appspot.com",
+          messagingSenderId: "8790  33278918",
+          appId: "1:879033278918:web:9f1b76e921065262"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+      <script src="../js/app.js"></script>
 
   </body>
-
 </html>
