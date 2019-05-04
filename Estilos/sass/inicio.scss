@@ -7,22 +7,51 @@
     width: 100%;
     .header{
 
-      height: 30%;
+      position: absolute;
+
+      display: grid;
+
+      .text-header-content{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 50%;
+        margin: auto;
+        color: #000000;
+        z-index: 2;
+
+
+        .titulo-header-content{
+          text-align:center;
+          margin-right: 100px;
+        }
+
+        .parrafo-header-content{
+          padding-right:15px;
+          font-size: 16px;
+        }
+      }
+
 
       ul{
         list-style: none;
       }
         .nav{
+
+            z-index: 2;
+            height: 200px;
+
             li{
               float: left;
               padding: 15px;
               a{
-                color:#fff;
+                color:#000000;
                 width: 100%;
+                font-size: 20px;
                 text-decoration: none;
                 padding: 10px 15px;
                 display: block;
                 text-align: center;
+                border-bottom: 2px solid rgb(213, 213, 213);
               }
               a:hover
               {
@@ -31,6 +60,6 @@
                 border-bottom: 2px solid #fff;
               }
             }
-      }
+          }
     }
 }

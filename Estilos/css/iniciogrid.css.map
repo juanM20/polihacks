@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/iniciogrid.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGA;EACE;EACA;;AAEA;EACE;EACA;EACA;;AAGF;EACE;;AAON;EAEI;EACA;;AAGJ;EAEI;EACA;;AAGJ;EAEI;EACA;EACA","file":"iniciogrid.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/iniciogrid.scss"],"names":[],"mappings":"AAEA;EACI;EACA;;AAEA;EACE;EACA;;AACA;EACE;EACA;;AAOF;EACE;EACA;EACA;;AAEA;EACE;EACA;;AAGF;EACE;;AAQN;EAEI;EACA;;AAGJ;EAEI;EACA;;AAGJ;EAEI;EACA;EACA","file":"iniciogrid.css"}

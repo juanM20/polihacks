@@ -2,26 +2,24 @@
   display: grid;
   grid-gap: 20px;
 }
-.contenedor .header {
-  display: grid;
-  height: 400px;
-  justify-content: start;
-  padding: 10px;
-  background-image: url("../../HTML/imagenes/fondo-presentacion.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.contenedor .back-image {
+  opacity: 0.6;
+  z-index: -1;
 }
-.contenedor .header .text-header-content {
+.contenedor .back-image img {
+  width: 100%;
+  height: 1000px;
+}
+.contenedor .back-image .header .text-header-content {
   display: grid;
   grid-template-columns: 60% 40%;
+  z-index: 2;
 }
-.contenedor .header .text-header-content .titulo-header-content {
+.contenedor .back-image .header .text-header-content .titulo-header-content {
   text-align: center;
   color: #ffffff;
-  z-index: 6;
 }
-.contenedor .header .text-header-content .parrafo-header-content {
+.contenedor .back-image .header .text-header-content .parrafo-header-content {
   color: #ffffff;
 }
 .contenedor .contenido1 {

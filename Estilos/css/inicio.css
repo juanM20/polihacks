@@ -7,22 +7,45 @@
   width: 100%;
 }
 .contenedor .header {
-  height: 30%;
+  position: absolute;
+  display: grid;
+}
+.contenedor .header .text-header-content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 50%;
+  margin: auto;
+  color: #000000;
+  z-index: 2;
+}
+.contenedor .header .text-header-content .titulo-header-content {
+  text-align: center;
+  margin-right: 100px;
+}
+.contenedor .header .text-header-content .parrafo-header-content {
+  padding-right: 15px;
+  font-size: 16px;
 }
 .contenedor .header ul {
   list-style: none;
+}
+.contenedor .header .nav {
+  z-index: 2;
+  height: 200px;
 }
 .contenedor .header .nav li {
   float: left;
   padding: 15px;
 }
 .contenedor .header .nav li a {
-  color: #fff;
+  color: #000000;
   width: 100%;
+  font-size: 20px;
   text-decoration: none;
   padding: 10px 15px;
   display: block;
   text-align: center;
+  border-bottom: 2px solid #d5d5d5;
 }
 .contenedor .header .nav li a:hover {
   background: #434343;
