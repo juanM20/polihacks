@@ -11,12 +11,17 @@
 
       .text-header-content{
         display: grid;
+<<<<<<< HEAD
         grid-template-columns: 50% 50%;
         justify-content: space-between;
+=======
+        grid-template-columns: 60% 40%;
+>>>>>>> 87371acc4451ecc5e2ada0402c1c9e87f64d869a
         width: 50%;
         margin: auto;
         color: #000000;
         z-index: 2;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -25,6 +30,12 @@
         .titulo-header-content{
           text-align:center;
           margin-right: 15px;
+=======
+
+
+        .titulo-header-content{
+          text-align:center;
+>>>>>>> 87371acc4451ecc5e2ada0402c1c9e87f64d869a
         }
 
         .parrafo-header-content{

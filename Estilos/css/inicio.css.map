@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["../sass/inicio.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;;AAGJ;EACI;;AACA;EACE;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAGF;EACE;;AAKJ;EACE;;AAEA;EAEI;EACA;;AAEA;EACE;EACA;;AACA;EACE;EACA;EACA;EACA;EACA;EACA;;AAEF;EAEE;EACA;EACA","file":"inicio.css"}
 =======
 {"version":3,"sourceRoot":"","sources":["../sass/inicio.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;;AAGJ;EACI;;AACA;EACE;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;;AAGA;EACE;;AAGF;EACE;;AAKJ;EACE;;AAEA;EAEI;EACA;;AAEA;EACE;EACA;;AACA;EACE;EACA;EACA;EACA;EACA;EACA;;AAEF;EAEE;EACA;EACA","file":"inicio.css"}
 >>>>>>> 4714c5998e99c78d6bb348a77307c62f8672578d
+=======
+{"version":3,"sourceRoot":"","sources":["../sass/inicio.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;;AAGJ;EACI;;AACA;EACE;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;;AAGA;EACE;;AAGF;EACE;;AAKJ;EACE;;AAEA;EAEI;EACA;;AAEA;EACE;EACA;;AACA;EACE;EACA;EACA;EACA;EACA;EACA;;AAEF;EAEE;EACA;EACA","file":"inicio.css"}
+>>>>>>> 87371acc4451ecc5e2ada0402c1c9e87f64d869a
