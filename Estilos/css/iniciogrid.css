@@ -1,0 +1,33 @@
+.contenedor {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "header     header" "contenido1 contenido1" "contenido2 contenido2" "contenido3 contenido3" "contenido4 contenido4" "footer     footer";
+}
+.contenedor .header {
+  grid-area: header;
+  background: #ff8000;
+  display: grid;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 10px solid darkblue;
+  background: lightcoral;
+}
+.contenedor .contenido1 {
+  grid-area: contenido1;
+  background: lightgreen;
+  text-align: center;
+}
+.contenedor .contenido2 {
+  grid-area: contenido2;
+  background-color: lightgreen;
+  text-align: center;
+}
+.contenedor .footer {
+  grid-area: footer;
+  background-color: darkblue;
+  text-align: center;
+  color: #fff;
+}
+
+/*# sourceMappingURL=iniciogrid.css.map */

@@ -1,0 +1,53 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.contenedor {
+  width: 100%;
+}
+.contenedor .header ul {
+  list-style: none;
+}
+.contenedor .header .nav li {
+  float: left;
+  padding: 15px;
+}
+.contenedor .header .nav li a {
+  background: #fff;
+  color: #000;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  text-align: center;
+}
+.contenedor .header .nav li a:hover {
+  background: #434343;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav li a {
+  background: #fff;
+  color: #000;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  text-align: center;
+}
+
+.nav li a:hover {
+  background: #434343;
+  color: #fff;
+}
+
+.nav > li {
+  float: left;
+}
+
+/*# sourceMappingURL=inicio.css.map */
