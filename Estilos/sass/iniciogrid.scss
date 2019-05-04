@@ -1,37 +1,48 @@
 .contenedor{
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-areas: "header     header"
-                         "contenido1 contenido1"
-                         "contenido2 contenido2"
-                         "contenido3 contenido3"
-                         "contenido4 contenido4"
-                         "footer     footer";
+
     .header{
-      grid-area: header;
-      background: #ff8000;
       display: grid;
-      justify-content: center;
+      height: 400px;
+      justify-content: start;
       padding: 10px;
-      border-bottom: 10px solid darkblue;
-      background: lightcoral;
+      background-image: url('../../HTML/imagenes/fondo-presentacion.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .text-header-content{
+        display: grid;
+        grid-template-columns: 60% 40%;
+
+        .titulo-header-content{
+          text-align:center;
+          color: #ffffff;
+        }
+
+        .parrafo-header-content{
+          color: #ffffff;
+        }
+
+      }
+
     }
 
     .contenido1{
-        grid-area: contenido1;
+
         background: lightgreen;
         text-align: center;
     }
 
     .contenido2{
-        grid-area: contenido2;
+
         background-color: lightgreen;
         text-align: center;
     }
 
     .footer{
-        grid-area: footer;
+
         background-color: darkblue;
         text-align:center;
         color: #fff;
