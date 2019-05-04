@@ -12,6 +12,7 @@
       background-repeat: no-repeat;
       background-position: center;
 
+
       .text-header-content{
         display: grid;
         grid-template-columns: 60% 40%;
@@ -19,6 +20,7 @@
         .titulo-header-content{
           text-align:center;
           color: #ffffff;
+          z-index: 6;
         }
 
         .parrafo-header-content{

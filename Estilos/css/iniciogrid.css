@@ -19,6 +19,7 @@
 .contenedor .header .text-header-content .titulo-header-content {
   text-align: center;
   color: #ffffff;
+  z-index: 6;
 }
 .contenedor .header .text-header-content .parrafo-header-content {
   color: #ffffff;
