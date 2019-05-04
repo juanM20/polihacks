@@ -1,11 +1,14 @@
 body{
   margin: 0;
   padding: 0;
-  background: rgba(232,232,232,1);
-  background: linear-gradient(to right, rgba(232,232,232,1) 0%, rgba(222,222,222,1) 44%, rgba(217,217,217,1) 74%, rgba(217,217,217,1) 97%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#d9d9d9', GradientType=1 );
 
+  background-image: url(../../HTML/imagenes/fondo-l.jpg);
+  background-size: contain;
+  //background: rgba(232,232,232,1);
+  //background: linear-gradient(to right, rgba(232,232,232,1) 0%, rgba(222,222,222,1) 44%, rgba(217,217,217,1) 74%, rgba(217,217,217,1) 97%);
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#d9d9d9', GradientType=1 );
 }
+
 
 .Login{
 
@@ -21,10 +24,10 @@ body{
 
     p{
       z-index: 2;
-
       text-align: center;
       font-size: 20pt;
     }
+
   }
 
   background-color: #ffffff;
@@ -44,16 +47,28 @@ body{
         /*grid-template-rows: 3;*/
         grid-row-gap: 20px;
 
+
         .btn{
           width: 100%;
           text-decoration: none;
           border-radius: 25px;
-          background: yellow;
+          background: rgba(#ffda18, 1);
           text-align: center;
           text-decoration: none;
           color: #000000;
           padding: 10px;
           box-sizing: border-box;
+          transition-property: all;
+          transition-duration: 1.0s;
+          transition-timing-function: cubic-bezier(.1,.48,.44,.78);
+        }
+
+        .btn:hover{
+          color: rgb(120, 178, 255);
+          box-shadow: -4px 7px 20px -4px rgba(0,0,0,0.56);
+          transition-property: all;
+          transition-duration: 0.7s;
+          transition-timing-function: cubic-bezier(.1,.48,.44,.78);
         }
 
         .Campos-form{
@@ -77,10 +92,10 @@ body{
 
 .footer{
   display: block;
-  background-color: lightblue;
-  color: #000;
+  color: #ffffff;
   padding: 10px;
   bottom: 0;
+  border-top: 1px solid #ffffff;
 
   .footer-content{
     display: flex;
