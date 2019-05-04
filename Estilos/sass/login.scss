@@ -1,13 +1,20 @@
 body{
   margin: 0;
   padding: 0;
+  background: rgba(232,232,232,1);
+  background: linear-gradient(to right, rgba(232,232,232,1) 0%, rgba(222,222,222,1) 44%, rgba(217,217,217,1) 74%, rgba(217,217,217,1) 97%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#d9d9d9', GradientType=1 );
+
 }
 
 .Login{
 
+  background-color: #ffffff;
   color:#000000;
-  width: 60%;
+  width: 40%;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
   padding: 10px 20px;
   border-radius: 25px;
   box-shadow: -4px 7px 20px -4px rgba(0,0,0,0.56);
@@ -16,20 +23,34 @@ body{
       .Form-login{
 
         display: grid;
-        grid-template-rows: 2;
+        grid-template-rows: 3;
         grid-row-gap: 20px;
 
         .btn{
+          width: 100%;
           text-decoration: none;
           border-radius: 25px;
           background: yellow;
+          text-align: center;
+          text-decoration: none;
+          color: #000000;
           padding: 10px;
+          box-sizing: border-box;
         }
 
         .Campos-form{
           display: grid;
           grid-template-rows: 3;
           grid-row-gap: 20px;
+
+          input[type=text],input[type=password]{
+            width: 100%;
+            margin: 10px 0px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
         }
       }
   }
@@ -37,11 +58,15 @@ body{
 
 
 .footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: block;
   background-color: lightblue;
   color: #000;
   padding: 10px;
   bottom: 0;
+
+  .footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

@@ -1,41 +1,63 @@
 body {
   margin: 0;
   padding: 0;
+  background: #e8e8e8;
+  background: linear-gradient(to right, #e8e8e8 0%, #dedede 44%, #d9d9d9 74%, #d9d9d9 97%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e8e8e8", endColorstr="#d9d9d9", GradientType=1 );
 }
 
 .Login {
+  background-color: #ffffff;
   color: #000000;
-  width: 60%;
+  width: 40%;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
   padding: 10px 20px;
   border-radius: 25px;
   box-shadow: -4px 7px 20px -4px rgba(0, 0, 0, 0.56);
 }
 .Login .Login-container .Form-login {
   display: grid;
-  grid-template-rows: 2;
+  grid-template-rows: 3;
   grid-row-gap: 20px;
 }
 .Login .Login-container .Form-login .btn {
+  width: 100%;
   text-decoration: none;
   border-radius: 25px;
   background: yellow;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
   padding: 10px;
+  box-sizing: border-box;
 }
 .Login .Login-container .Form-login .Campos-form {
   display: grid;
   grid-template-rows: 3;
   grid-row-gap: 20px;
 }
+.Login .Login-container .Form-login .Campos-form input[type=text], .Login .Login-container .Form-login .Campos-form input[type=password] {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
 .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: block;
   background-color: lightblue;
   color: #000;
   padding: 10px;
   bottom: 0;
+}
+.footer .footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=login.css.map */
