@@ -2,7 +2,7 @@
 
 .contenedor{
     display: grid;
-    grid-gap: 20px;
+    /*grid-gap: 20px;*/
 
     .back-image{
       opacity: 0.6;
@@ -14,7 +14,7 @@
 
 
     .header{
-      
+
 
       .text-header-content{
         display: grid;
@@ -32,26 +32,28 @@
 
       }
      }
-
     }
 
     .contenido1{
-
-        background: lightgreen;
         text-align: center;
+
+        .content1-texto{
+          position:absolute;
+        }
     }
 
     .contenido2{
-
-        background-color: lightgreen;
         text-align: center;
+
+        .content2-texto{
+          position: absolute;
+        }
     }
 
     .footer{
-
         background-color: darkblue;
         text-align:center;
         color: #fff;
+        padding: 15px;
     }
-
 }

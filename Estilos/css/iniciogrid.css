@@ -1,6 +1,6 @@
 .contenedor {
   display: grid;
-  grid-gap: 20px;
+  /*grid-gap: 20px;*/
 }
 .contenedor .back-image {
   opacity: 0.6;
@@ -23,17 +23,22 @@
   color: #ffffff;
 }
 .contenedor .contenido1 {
-  background: lightgreen;
   text-align: center;
 }
+.contenedor .contenido1 .content1-texto {
+  position: absolute;
+}
 .contenedor .contenido2 {
-  background-color: lightgreen;
   text-align: center;
+}
+.contenedor .contenido2 .content2-texto {
+  position: absolute;
 }
 .contenedor .footer {
   background-color: darkblue;
   text-align: center;
   color: #fff;
+  padding: 15px;
 }
 
 /*# sourceMappingURL=iniciogrid.css.map */

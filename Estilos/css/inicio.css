@@ -12,7 +12,7 @@
 }
 .contenedor .header .text-header-content {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 60% 40%;
   width: 50%;
   margin: auto;
   color: #000000;
@@ -20,11 +20,9 @@
 }
 .contenedor .header .text-header-content .titulo-header-content {
   text-align: center;
-  margin-right: 100px;
 }
 .contenedor .header .text-header-content .parrafo-header-content {
   padding-right: 15px;
-  font-size: 16px;
 }
 .contenedor .header ul {
   list-style: none;
@@ -38,19 +36,33 @@
   padding: 15px;
 }
 .contenedor .header .nav li a {
-  color: #000000;
+  color: #fff;
   width: 100%;
-  font-size: 20px;
   text-decoration: none;
   padding: 10px 15px;
   display: block;
   text-align: center;
-  border-bottom: 2px solid #d5d5d5;
 }
 .contenedor .header .nav li a:hover {
   background: #434343;
   color: #fff;
   border-bottom: 2px solid #fff;
+}
+.contenedor .contenido1 {
+  display: grid;
+}
+.contenedor .contenido1 .content1-texto {
+  padding-top: 200px;
+  position: absolute;
+  text-align: center;
+}
+.contenedor .contenido2 {
+  display: grid;
+}
+.contenedor .contenido2 .content2-texto {
+  padding-top: 200px;
+  position: absolute;
+  text-align: center;
 }
 
 /*# sourceMappingURL=inicio.css.map */

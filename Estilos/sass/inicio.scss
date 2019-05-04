@@ -3,17 +3,16 @@
     margin: 0px;
 }
 
+
 .contenedor{
     width: 100%;
     .header{
-
       position: absolute;
-
       display: grid;
 
       .text-header-content{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 60% 40%;
         width: 50%;
         margin: auto;
         color: #000000;
@@ -22,12 +21,10 @@
 
         .titulo-header-content{
           text-align:center;
-          margin-right: 100px;
         }
 
         .parrafo-header-content{
           padding-right:15px;
-          font-size: 16px;
         }
       }
 
@@ -44,14 +41,12 @@
               float: left;
               padding: 15px;
               a{
-                color:#000000;
+                color:#fff;
                 width: 100%;
-                font-size: 20px;
                 text-decoration: none;
                 padding: 10px 15px;
                 display: block;
                 text-align: center;
-                border-bottom: 2px solid rgb(213, 213, 213);
               }
               a:hover
               {
@@ -60,6 +55,25 @@
                 border-bottom: 2px solid #fff;
               }
             }
-          }
+      }
+    }
+
+    .contenido1{
+        display: grid;
+        .content1-texto{
+          padding-top: 200px;
+              position:absolute;
+              text-align: center;
+        }
+    }
+
+    .contenido2{
+        display: grid;
+        .content2-texto{
+          padding-top: 200px;
+          position: absolute;
+          text-align: center;
+
+        }
     }
 }
