@@ -20,9 +20,11 @@
 }
 .contenedor .header .text-header-content .titulo-header-content {
   text-align: center;
+  margin-right: 100px;
 }
 .contenedor .header .text-header-content .parrafo-header-content {
   padding-right: 15px;
+  font-size: 18px;
 }
 .contenedor .header ul {
   list-style: none;
@@ -34,6 +36,7 @@
 .contenedor .header .nav li {
   float: left;
   padding: 15px;
+  border-bottom: 2px solid #ffffff;
 }
 .contenedor .header .nav li a {
   color: #fff;
@@ -46,23 +49,43 @@
 .contenedor .header .nav li a:hover {
   background: #434343;
   color: #fff;
-  border-bottom: 2px solid #fff;
+  transition: all 0.6s ease;
 }
 .contenedor .contenido1 {
   display: grid;
 }
 .contenedor .contenido1 .content1-texto {
+  display: grid;
+  grid-template-columns: 60% 30%;
   padding-top: 200px;
   position: absolute;
   text-align: center;
+}
+.contenedor .contenido1 .content1-texto .content1-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+.contenedor .contenido1 .content1-texto .content1-parrafo {
+  font-size: 18px;
+  text-align: start;
 }
 .contenedor .contenido2 {
   display: grid;
 }
 .contenedor .contenido2 .content2-texto {
+  display: grid;
+  grid-template-columns: 60% 30%;
   padding-top: 200px;
   position: absolute;
   text-align: center;
+}
+.contenedor .contenido2 .content2-texto .content2-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+.contenedor .contenido2 .content2-texto .content2-parrafo {
+  font-size: 18px;
+  text-align: start;
 }
 
 /*# sourceMappingURL=inicio.css.map */

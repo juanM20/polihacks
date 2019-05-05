@@ -21,10 +21,13 @@
 
         .titulo-header-content{
           text-align:center;
+          margin-right: 100px;
+
         }
 
         .parrafo-header-content{
           padding-right:15px;
+          font-size: 18px;
         }
       }
 
@@ -40,6 +43,7 @@
             li{
               float: left;
               padding: 15px;
+              border-bottom: 2px solid #ffffff;
               a{
                 color:#fff;
                 width: 100%;
@@ -52,7 +56,7 @@
               {
                 background:#434343;
                 color: #fff;
-                border-bottom: 2px solid #fff;
+                transition: all 0.6s ease;
               }
             }
       }
@@ -61,19 +65,40 @@
     .contenido1{
         display: grid;
         .content1-texto{
+          display: grid;
+          grid-template-columns: 60% 30%;
           padding-top: 200px;
-              position:absolute;
-              text-align: center;
+          position:absolute;
+          text-align: center;
+
+          .content1-title{
+            font-size: 25px;
+            font-weight: bold;
+          }
+          .content1-parrafo{
+            font-size: 18px;
+            text-align: start;
+          }
         }
     }
 
     .contenido2{
         display: grid;
         .content2-texto{
+          display: grid;
+          grid-template-columns: 60% 30%;
           padding-top: 200px;
           position: absolute;
           text-align: center;
 
+          .content2-title{
+            font-size: 25px;
+            font-weight: bold;
+          }
+          .content2-parrafo{
+            font-size: 18px;
+            text-align: start;
+          }
         }
     }
 }
