@@ -2,9 +2,9 @@ var maptypes;
 var platform;
 var routingParameters;
 var direcciones = [{ 'mode': 'fastest;truck;traffic:enabled',
-  'waypoint0': '20.46632,-97.133211',
-  'waypoint1': '17.499806,-99.148522',
-  'waypoint2': '16.510261699999997,-10.12902369999999',
+  'waypoint0': '19.425784,-99.1546277',
+  'waypoint1': '19.4267503,-99.149282',
+  'waypoint2': '19.4819077,-99.1198124',
   'height':'4',
   'width':'3',
   'length':'7',
@@ -56,103 +56,60 @@ var direcciones = [{ 'mode': 'fastest;truck;traffic:enabled',
   'limitedWeight':'10',
   'representation': 'display'
 },{ 'mode': 'fastest;truck;traffic:enabled',
-  'waypoint0': '19.5255716,-99.2276346',
-  'waypoint1': '19.5103168,-99.2341564',
-  'waypoint2': '19.499195,-99.2368621',
+  'waypoint0': '19.3981714,-99.2007277',
+  'waypoint1': '19.412925,-99.1817714',
+  'waypoint2': '19.4214598,-99.1710189',
   'height':'4',
   'width':'3',
   'length':'7',
   'limitedWeight':'10',
   'representation': 'display'
 },{ 'mode': 'fastest;truck;traffic:enabled',
-  'waypoint0': '19.5043757,-99.2002284',
-  'waypoint1': '19.4947868,-99.1962408',
-  'waypoint2': '19.4908384,-99.1736468',
+  'waypoint0': '19.4366767, -99.1471857',
+  'waypoint1': '19.436052,-99.1418938',
+  'waypoint2': '19.4354122,-99.1368711',
   'height':'4',
   'width':'3',
   'length':'7',
   'limitedWeight':'10',
   'representation': 'display'
 },{ 'mode': 'fastest;truck;traffic:enabled',
-  'waypoint0': '19.4591465,-99.2155762',
-  'waypoint1': '19.4597042,-99.1881487',
-  'waypoint2': '19.4530629,-99.1753585',
+  'waypoint0': '19.5006186,-99.1491779',
+  'waypoint1': '19.4789149,-99.140622',
+  'waypoint2': '19.4696895,-99.1365289',
   'height':'4',
   'width':'3',
   'length':'7',
   'limitedWeight':'10',
   'representation': 'display'
 },{ 'mode': 'fastest;truck;traffic:enabled',
-  'waypoint0': '20.46632,-97.133211',
-  'waypoint1': '17.499806,-99.148522',
-  'waypoint2': '16.510261699999997,-10.12902369999999',
+  'waypoint0': '19.3562484,-99.1013008',
+  'waypoint1': '19.3577059,-99.0932823',
+  'waypoint2': '19.355658,-99.0854504',
   'height':'4',
   'width':'3',
   'length':'7',
   'limitedWeight':'10',
   'representation': 'display'
 },{ 'mode': 'fastest;truck;traffic:enabled',
-  'waypoint0': '20.46632,-97.133211',
-  'waypoint1': '17.499806,-99.148522',
-  'waypoint2': '16.510261699999997,-10.12902369999999',
+  'waypoint0': '19.3562484,-99.1013008',
+  'waypoint1': '19.3577059,-99.0932823',
+  'waypoint2': '19.355658,-99.0854504',
   'height':'4',
   'width':'3',
   'length':'7',
   'limitedWeight':'10',
   'representation': 'display'
 },{ 'mode': 'fastest;truck;traffic:enabled',
-  'waypoint0': '20.46632,-97.133211',
-  'waypoint1': '17.499806,-99.148522',
-  'waypoint2': '16.510261699999997,-10.12902369999999',
-  'height':'4',
-  'width':'3',
-  'length':'7',
-  'limitedWeight':'10',
-  'representation': 'display'
-},{ 'mode': 'fastest;truck;traffic:enabled',
-  'waypoint0': '20.46632,-97.133211',
-  'waypoint1': '17.499806,-99.148522',
-  'waypoint2': '16.510261699999997,-10.12902369999999',
-  'height':'4',
-  'width':'3',
-  'length':'7',
-  'limitedWeight':'10',
-  'representation': 'display'
-},{ 'mode': 'fastest;truck;traffic:enabled',
-  'waypoint0': '20.46632,-97.133211',
-  'waypoint1': '17.499806,-99.148522',
-  'waypoint2': '16.510261699999997,-10.12902369999999',
-  'height':'4',
-  'width':'3',
-  'length':'7',
-  'limitedWeight':'10',
-  'representation': 'display'
-},{ 'mode': 'fastest;truck;traffic:enabled',
-  'waypoint0': '20.46632,-97.133211',
-  'waypoint1': '17.499806,-99.148522',
-  'waypoint2': '16.510261699999997,-10.12902369999999',
+  'waypoint0': '19.425784,-99.1546277',
+  'waypoint1': '19.4267503,-99.149282',
+  'waypoint2': '19.4819077,-99.1198124',
   'height':'4',
   'width':'3',
   'length':'7',
   'limitedWeight':'10',
   'representation': 'display'
 }];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 var firebaseConfig = {
     apiKey: "AIzaSyBF_GZ2Ng3VePrGfmqSJObROzoz-W7QRlU",
@@ -206,9 +163,33 @@ function showPosition(position) {
 
 }
 
+platform = new H.service.Platform({
+'app_id': 'L9nu8AfZcs7bQx77fX9U',
+'app_code': 'NgO459xoAJ2Wnxgjr-4DFQ'
+});
+
+// Creamos las platillas de los diversos mapas de la API
+maptypes = platform.createDefaultLayers();
+// Creamos una instancia y desplegamos en el container el mapa
+/*var map = new H.Map(
+document.getElementById('mapContainer'),
+maptypes.normal.map,
+{
+zoom: 15,
+center: { lng: 15.54, lat: 15.54  }
+});
+// Create the default UI:
+var ui = H.ui.UI.createDefault(map, maptypes,'es-ES');*/
+
 function rutas(num){
   //Retrieve the target element of the map
   var targetElement = document.getElementById('mapContainer');
+
+  while (targetElement.firstChild) {
+    targetElement.removeChild(targetElement.firstChild);
+  }
+
+  var maptypes = platform.createDefaultLayers();
   var map = new H.Map(
   document.getElementById('mapContainer'),
   maptypes.normal.map,
@@ -219,14 +200,15 @@ function rutas(num){
   // Create the default UI:
   var ui = H.ui.UI.createDefault(map, maptypes,'es-ES');
   //Get routeParameters
-  var docRef = db.collection("json").doc(num);
+  /*var docRef = db.collection("json").doc("1");
   docRef.get().then(function(doc) {
         if (doc.exists) {
       var dat = doc.data();
       console.log(dat);
       routingParameters=dat;
-      console.log(routingParameters);
+      console.log(routingParameters);*/
 
+      routingParameters =  direcciones[num];
       // Define a callback function to process the routing response:
       var onResult = function(result) {
        var route,
@@ -275,27 +257,22 @@ function rutas(num){
       // Call calculateRoute() with the routing parameters,
       // the callback and an error callback function (called if a
       // communication error occurs):
-      console.log(routingParameters);
-      console.log(typeof(routingParameters));
-      var obj = JSON.stringify(routingParameters.jason);
-      console.log(array);
-      console.log(typeof(array));
-      console.log(obj);
-      console.log(routingParameters.jason);
-      console.log(typeof(obj));
-      router.calculateRoute(obj, onResult,
+      //var obj = JSON.stringify(routingParameters.jason);
+
+      //var obj = direcciones[num-1];
+      router.calculateRoute(routingParameters, onResult,
        function(error) {
        alert(error.message);
        });
 
       //dibujarRuta(routingParameters);
-        } else {
+      //  } else {
       // doc.data() will be undefined in this case
-      console.log("No such document!");
-        }
-    }).catch(function(error) {
-        console.log("Error getting document:", error);
-    });
+      //console.log("No such document!");
+        //}
+    //}).catch(function(error) {
+      //  console.log("Error getting document:", error);
+    //});
 }
 
 function dibujarRuta(routingParameters){
@@ -358,4 +335,4 @@ function dibujarRuta(routingParameters){
    });
 }
 
-getLocation();
+//getLocation();
