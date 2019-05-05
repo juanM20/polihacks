@@ -11,7 +11,7 @@ var firebaseConfig = {
 var direccion = new Object();
 firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
-var jasons = db.collection("json");
+var docRef = db.collection("json").doc("");
 
 console.log(jasons);
 
