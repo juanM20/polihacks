@@ -1,3 +1,9 @@
+.main_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
 #mapContainer {
   margin: auto;
   margin-top: 6%;
@@ -9,6 +15,29 @@
 }
 .text-map .title-map {
   text-align: center;
+}
+
+.vertical-menu {
+  width: 300px;
+  height: 580px;
+  overflow-y: auto;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #2880d1;
+  color: white;
 }
 
 /*# sourceMappingURL=mapa.css.map */

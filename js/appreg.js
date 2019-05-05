@@ -3,6 +3,9 @@ function registrar(){
   var email = document.getElementById('email').value;
   var password = document.getElementById('password').value;
   firebase.auth().createUserWithEmailAndPassword(email, password)
+  .then(function (result) {
+      window.location.href = ('../here/mapHere.html');
+  });
   .catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
