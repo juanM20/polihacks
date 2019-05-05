@@ -30,7 +30,7 @@ function autenticacion(){
 .then(function(result){
 		alert("correcto");
 		window.location.href = ('../here/mapHere.html');
-})
+});
 	.catch(function(error) {
   // Handle Errors here.
   var errorCode = error.code;
