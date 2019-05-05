@@ -1,4 +1,20 @@
+
+var firebaseConfig = {
+    apiKey: "AIzaSyBF_GZ2Ng3VePrGfmqSJObROzoz-W7QRlU",
+    authDomain: "hackaton-b5b58.firebaseapp.com",
+    databaseURL: "https://hackaton-b5b58.firebaseio.com",
+    projectId: "hackaton-b5b58",
+    storageBucket: "hackaton-b5b58.appspot.com",
+    messagingSenderId: "879033278918",
+    appId: "1:879033278918:web:9f1b76e921065262"
+  };
 var direccion = new Object();
+firebase.initializeApp(firebaseConfig);
+var db = firebase.firestore();
+var jasons = db.collection("json");
+
+console.log(jasons);
+
 
 function getLocation() {
   if (navigator.geolocation) {
